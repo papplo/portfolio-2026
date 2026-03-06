@@ -1,1 +1,5 @@
 node_modules
+CONTENT_STRATEGY.md
+.claude/
+.claude/**
+*.local.json

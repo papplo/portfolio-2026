@@ -5,7 +5,9 @@
       "Bash(git config user.email \"dev@example.com\")",
       "Bash(git config user.name \"Developer\")",
       "Bash(git add .)",
-      "Bash(git commit -m \"Initial commit: Migrate from Tailwind CSS to PicoCSS with semantic HTML\")"
+      "Bash(git commit -m \"Initial commit: Migrate from Tailwind CSS to PicoCSS with semantic HTML\")",
+      "Bash(git push -u origin docs/update-readme)",
+      "Bash(gh pr:*)"
     ]
   }
 }
