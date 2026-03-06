@@ -1,0 +1,59 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Toca Boca — Pablo Anttila">
+  <main>
+    <nav aria-label="breadcrumb">
+      <a href="/work">← All work</a>
+    </nav>
+
+    <header>
+      <small>2020–2021</small>
+      <h1>Toca Boca</h1>
+      <p>Player Identity System</p>
+    </header>
+
+    <figure>
+      <p>[Project screenshot]</p>
+    </figure>
+
+    <article>
+      <h2>What</h2>
+      <p>A login and friend system for <strong>Toca Life World</strong>, one of the most downloaded kids' apps in the world. The system enables multiplayer features in Toca Boca's suite of games while keeping children safe.</p>
+
+      <h2>My role</h2>
+      <p>Frontend lead on a small team — three developers and a PM. I owned the React/TypeScript web interface and drove the UX design process.</p>
+
+      <h2>The challenge</h2>
+      <p>Building authentication flows for kids aged 7–12, with parental controls, friend codes, and zero tolerance for dark patterns. This is a space full of bad actors — privacy-first design wasn't optional.</p>
+
+      <h2>What I built</h2>
+      <ul>
+        <li><strong>Parent dashboard (web)</strong> — React + TypeScript interface for account management</li>
+        <li><strong>Friend code system</strong> — Kid-safe way to connect with friends without exposing personal data</li>
+        <li><strong>Email verification flows</strong> — For parental consent (COPPA compliance)</li>
+        <li><strong>Component library</strong> — Shared UI kit for the team</li>
+      </ul>
+
+      <h2>Stack</h2>
+      <p>
+        {['React', 'TypeScript', 'NestJS', 'AWS', 'Docker', 'Jest', 'Cypress'].map(tech => (
+          <code>{tech}</code>
+        ))}
+      </p>
+
+      <h2>The hard part</h2>
+      <p>Designing "fun" authentication for kids without manipulating them. Every screen had legal review. Every copy choice mattered. We couldn't use the usual engagement tricks — no streaks, no FOMO, no pressure.</p>
+      <p>The result was slower but more honest. Kids could connect with friends using simple codes. Parents had real visibility and control. The system passed regulatory review in multiple jurisdictions.</p>
+
+      <h2>Outcome</h2>
+      <p>[Pablo: Add metrics if you have them — users, adoption rate, anything quantifiable. Even "shipped to X million users" works.]</p>
+    </article>
+
+    <nav>
+      <a href="/work">← All projects</a>
+      <a href="/work/dreamlake">Dreamlake →</a>
+    </nav>
+  </main>
+</Layout>

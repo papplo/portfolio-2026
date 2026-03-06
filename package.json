@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-2026",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.3.13",
+    "astro": "^5.18.0",
+    "pico-css": "^3.0.3"
+  }
+}

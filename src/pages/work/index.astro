@@ -1,0 +1,84 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const projects = [
+  {
+    slug: 'toca-boca',
+    title: 'Toca Boca',
+    subtitle: 'Player Identity System',
+    period: '2020–2021',
+    description: 'Login and friend system for one of the world\'s most popular kids\' apps.',
+    tags: ['React', 'TypeScript', 'AWS'],
+  },
+  {
+    slug: 'dreamlake',
+    title: 'Dreamlake',
+    subtitle: 'Cruise Booking Platform',
+    period: '2018–2020',
+    description: 'White-label booking engine for Nordic travel agencies.',
+    tags: ['Next.js', 'React', 'Prismic'],
+  },
+  {
+    slug: 'tobii',
+    title: 'Tobii Gaming',
+    subtitle: 'E-commerce & Growth',
+    period: '2017–2018',
+    description: 'Frontend and growth marketing for eye-tracking gaming hardware.',
+    tags: ['WordPress', 'WooCommerce', 'Analytics'],
+  },
+  {
+    slug: 'eniro',
+    title: 'Eniro',
+    subtitle: 'Online Sales MVP',
+    period: '2016–2017',
+    description: 'Lead generation tool for Eniro\'s sales force — from concept to launch.',
+    tags: ['JavaScript', 'REST API', 'WordPress'],
+  },
+  {
+    slug: 'design-mobile',
+    title: 'Design Mobile',
+    subtitle: 'Early Mobile Web',
+    period: '2011–2012',
+    description: 'Mobile-optimized sites back when that meant separate builds for each device.',
+    tags: ['jQuery', 'PHP', 'Mobile'],
+  },
+  {
+    slug: 'betong',
+    title: 'Betong Magazine',
+    subtitle: 'Editorial Platform',
+    period: '2009–2014',
+    description: 'Sweden\'s largest concrete industry publication. 1M+ pageviews.',
+    tags: ['WordPress', 'PHP', 'Community'],
+  },
+];
+---
+
+<Layout title="Work — Pablo Anttila">
+  <main>
+    <nav aria-label="breadcrumb">
+      <a href="/">← Back</a>
+    </nav>
+
+    <h1>Work</h1>
+
+    {projects.map((project) => (
+      <article>
+        <header>
+          <hgroup>
+            <h2><a href={`/work/${project.slug}`}>{project.title}</a></h2>
+            <h3>{project.subtitle}</h3>
+          </hgroup>
+          <small>{project.period}</small>
+        </header>
+
+        <p>{project.description}</p>
+
+        <footer>
+          {project.tags.map((tag) => (
+            <code>{tag}</code>
+          ))}
+        </footer>
+      </article>
+    ))}
+  </main>
+</Layout>

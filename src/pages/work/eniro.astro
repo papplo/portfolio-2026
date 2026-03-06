@@ -1,0 +1,55 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Eniro — Pablo Anttila">
+  <main>
+    <nav aria-label="breadcrumb">
+      <a href="/work">← All work</a>
+    </nav>
+
+    <header>
+      <small>2016–2017</small>
+      <h1>Eniro</h1>
+      <p>Online Sales MVP</p>
+    </header>
+
+    <figure>
+      <p>[Project screenshot]</p>
+    </figure>
+
+    <article>
+      <h2>What</h2>
+      <p>Närvarokollen.se — a lead generation tool for Eniro's sales force. The portal aggregates data from multiple APIs to measure a business's online presence based on key contact information.</p>
+
+      <h2>My role</h2>
+      <p>Frontend Developer working directly with stakeholders and product owner. Designed and developed the first iteration of the platform from scratch.</p>
+
+      <h2>What I built</h2>
+      <ul>
+        <li><strong>User journey</strong> — Wireframes and prototypes for the complete flow</li>
+        <li><strong>Frontend app</strong> — REST API integration with JavaScript interface</li>
+        <li><strong>WordPress plugin</strong> — Packaged the app with custom WooCommerce templates</li>
+        <li><strong>Lead capture</strong> — User signup and data storage system</li>
+      </ul>
+
+      <h2>Stack</h2>
+      <p>
+        {['JavaScript', 'REST API', 'WordPress', 'WooCommerce', 'WP Engine'].map(tech => (
+          <code>{tech}</code>
+        ))}
+      </p>
+
+      <h2>Approach</h2>
+      <p>Bootstrapped MVP approach — embedded in the marketing team to move fast. The goal was proving the concept quickly, then iterating based on real sales team feedback.</p>
+
+      <h2>Outcome</h2>
+      <p>[Pablo: Add lead generation numbers, sales team adoption, or conversion data if available.]</p>
+    </article>
+
+    <nav>
+      <a href="/work/tobii">← Tobii</a>
+      <a href="/work/design-mobile">Design Mobile →</a>
+    </nav>
+  </main>
+</Layout>

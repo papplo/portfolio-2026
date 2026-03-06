@@ -1,0 +1,55 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Design Mobile — Pablo Anttila">
+  <main>
+    <nav aria-label="breadcrumb">
+      <a href="/work">← All work</a>
+    </nav>
+
+    <header>
+      <small>2011–2012</small>
+      <h1>Design Mobile</h1>
+      <p>Early Mobile Web</p>
+    </header>
+
+    <figure>
+      <p>[Project screenshot]</p>
+    </figure>
+
+    <article>
+      <h2>What</h2>
+      <p>Design Mobile specialized in producing optimized mobile versions of client websites — back when "mobile web" meant separate sites for early smartphone browsers. This was pre-responsive design, when every kilobyte mattered.</p>
+
+      <h2>My role</h2>
+      <p>Web Developer and UI Designer during the company's early growth phase. Created client sites and developed the in-house platform.</p>
+
+      <h2>What I did</h2>
+      <ul>
+        <li><strong>Platform UI overhaul</strong> — Adopted jQuery Mobile framework</li>
+        <li><strong>Client deliverables</strong> — Mobile sites under strict timelines</li>
+        <li><strong>New features</strong> — Navigation, Google Maps integration, RSS feeds, CMS plugins</li>
+        <li><strong>Primary product interface</strong> — UI/UX design for the main platform</li>
+      </ul>
+
+      <h2>Stack</h2>
+      <p>
+        {['jQuery', 'jQuery Mobile', 'HTML', 'CSS', 'PHP', 'Adobe CS'].map(tech => (
+          <code>{tech}</code>
+        ))}
+      </p>
+
+      <h2>Context</h2>
+      <p>This was the mobile web before iOS 7, before Android matured, before responsive design became standard. We built separate mobile experiences because that's what the technology demanded. Looking back, it was a masterclass in constraints.</p>
+
+      <h2>Why it matters</h2>
+      <p>Early career experience that shaped my understanding of performance, progressive enhancement, and building for real-world conditions — lessons that still apply today.</p>
+    </article>
+
+    <nav>
+      <a href="/work/eniro">← Eniro</a>
+      <a href="/work/betong">Betong →</a>
+    </nav>
+  </main>
+</Layout>
