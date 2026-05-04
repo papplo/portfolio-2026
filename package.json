@@ -11,6 +11,6 @@
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
     "astro": "^5.18.0",
-    "pico-css": "^3.0.3"
+    "pico-css": "^3.0.1"
   }
 }
